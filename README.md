@@ -26,4 +26,4 @@ npm run dev
 
 ## Deploy
 
-Vercel: https://stock-control-sigma-one.vercel.app/
+Vercel: https://stock-control-phi.vercel.app/
