@@ -1,0 +1,186 @@
+.statistics {
+  flex: 1;
+  text-align: center;
+  margin-top: 220px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.statistics h2 {
+  color: var(--text-primary-color);
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.statistics-table {
+  border: 1px solid var(--primary-color);
+  border-radius: 8px;
+  padding-bottom: 25px;
+  border-collapse: separate;
+  border-spacing: 0;
+  min-width: 750px;
+  text-align: left;
+  max-width: 1000px;
+}
+
+.table-head th {
+  border-bottom: 1px solid var(--primary-color);
+  border-left: 1px solid var(--primary-color);
+  padding-block: 20px;
+  padding-inline: 50px;
+  text-align: center;
+}
+
+.table-body td {
+  padding-inline: 50px;
+  border-left: 1px solid var(--primary-color);
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.leftest-th {
+  border-left: none !important;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.date-sub,
+.date-plus {
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  width: 12px;
+  margin-inline: 8px;
+  transition: filter 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.date-sub:hover,
+.date-plus:hover {
+  filter: brightness(85%);
+}
+
+.date-sub:disabled,
+.date-plus:disabled {
+  filter: brightness(50%);
+  cursor: default;
+}
+
+.statistic-payment {
+  display: flex;
+  flex-direction: row;
+  margin-top: 50px;
+  gap: 45px;
+}
+
+.statistic-card {
+  box-shadow: 0px 4px 8px var(--shadows);
+  padding: 45px;
+  min-width: 250px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--bg-primary-color);
+  transition: filter 0.2s ease;
+}
+
+@media screen and (max-width: 980px) {
+  .statistic-payment {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 45px;
+  }
+
+  .statistics {
+    margin-top: 280px;
+  }
+
+  .statistics-table {
+    min-width: 200px;
+  }
+
+  .table-head th {
+    padding-inline: 0;
+    padding-block: 0;
+  }
+
+  .table-body td {
+    padding-inline: 5px;
+  }
+
+  .statistic-card span {
+    font-size: 1rem;
+  }
+
+  .statistic-card {
+    min-width: 150px;
+    padding: 15px;
+  }
+
+  #larger-span {
+    font-size: 3rem;
+  }
+}
+
+.statistic-card span {
+  font-size: 2rem;
+}
+
+.expenses-card:hover {
+  cursor: pointer;
+  filter: brightness(85%);
+}
+
+#larger-span {
+  font-size: 4rem;
+}
+
+.md-alert {
+  font-size: 2rem;
+  color: #6b1f1c;
+  margin-top: 15px;
+}
+
+.md-alert-div span {
+  font-size: 1rem;
+  display: flex;
+  flex-direction: column;
+  color: #6b1f1c;
+}
+
+.expenses {
+  background-color: var(--bg-primary-color);
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  min-width: 550px;
+
+  border: none;
+  box-shadow: 0px 4px 8px var(--shadows);
+  border-radius: 8px;
+}
+
+.expenses label {
+  text-align: left;
+  margin-top: 25px;
+}
+
+.expenses input {
+  margin-bottom: 14px;
+}
+
+.expenses button {
+  min-width: 100%;
+}
+
+.expenses .secondary-button {
+  margin-top: 40px;
+}

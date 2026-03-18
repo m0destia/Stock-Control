@@ -1,0 +1,41 @@
+.panel-encloser {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.panel {
+  margin-top: 250px;
+}
+
+.controls button {
+  max-width: 292px;
+  font-size: 1.6rem;
+  margin-right: 150px;
+}
+
+.controls {
+  display: flex;
+  position: fixed;
+  top: 0;
+  width: 100dvw;
+  padding-block: 25px;
+  justify-content: right;
+  margin-top: 119px;
+  background-color: var(--bg-secondary-color);
+}
+
+@media screen and (max-width: 810px) {
+  .controls {
+    margin-top: 215px;
+    justify-content: center;
+  }
+
+  .controls button {
+    margin-right: 0;
+  }
+
+  .panel {
+    margin-top: 330px;
+  }
+}

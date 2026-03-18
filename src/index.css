@@ -1,0 +1,77 @@
+:root {
+  --bg-primary-color: rgb(241, 241, 241);
+  --bg-secondary-color: rgb(16, 0, 53);
+  --text-primary-color: rgb(29, 29, 29);
+  --text-secondary-color: rgb(66, 66, 66);
+  --text-primary-counter-color: white;
+  --primary-color: rgb(223, 85, 43);
+  --secondary-color: rgb(216, 212, 0);
+  --shadows: rgba(0, 0, 0, 0.26);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  backdrop-filter: blur(8px);
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  z-index: 11;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: var(--bg-primary-color);
+  color: var(--text-secondary-color);
+  font-family: "Poppins", sans-serif;
+}
+
+.panels {
+  display: flex;
+  height: 100%;
+}
+
+.primary-button {
+  background: var(--primary-color);
+  padding-block: 6px;
+  border: none;
+  color: var(--text-primary-counter-color);
+  font-weight: normal;
+  width: 90%;
+  border-radius: 15px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  text-transform: lowercase;
+  transition: filter 0.2s ease;
+}
+
+.primary-button:hover {
+  filter: brightness(80%);
+}
+
+.secondary-button {
+  background: none;
+  border: none;
+  border-bottom: 2px solid rgba(0, 0, 0, 0);
+  color: var(--primary-color);
+  font-size: large;
+  font-weight: bolder;
+  transition: border-bottom 0.2s ease;
+  cursor: pointer;
+  font-family: "Inter", sans-serif;
+  text-transform: lowercase;
+}
+
+.secondary-button:hover {
+  border-bottom: 2px solid var(--primary-color);
+}

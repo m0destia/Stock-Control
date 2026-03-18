@@ -1,0 +1,29 @@
+header {
+  background-color: var(--bg-secondary-color);
+  min-width: 100dvw;
+  min-height: 140px;
+  padding: 50px;
+  padding-inline: 150px;
+  display: flex;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  flex-direction: row;
+}
+
+header h1 {
+  font-size: 2rem;
+  flex: 100%;
+  font-family: "Satoshi", sans-serif;
+  font-weight: bold;
+  color: var(--text-primary-counter-color);
+}
+
+@media screen and (max-width: 810px) {
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-inline: 25px;
+  }
+}

@@ -1,0 +1,17 @@
+.navigate {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 12px;
+}
+
+.navigate button {
+  min-width: 140px;
+  padding: 0.5rem 1rem;
+}
+
+@media screen and (max-width: 810px) {
+  .navigate {
+    flex-direction: column;
+  }
+}
